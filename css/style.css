@@ -463,6 +463,19 @@ a:active {
   margin-top: 15px;
 }
 
+#pods .col-md-6.text-center .img-fluid {
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+}
+
+#pods .row + .row {
+  margin-top: 24px;
+}
+
 /*--
   Gallery start
 --*/
