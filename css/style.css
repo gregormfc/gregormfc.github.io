@@ -125,6 +125,73 @@ a:active {
   padding: 100px 0;
 }
 
+#home {
+  position: relative;
+  overflow: hidden;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(120deg, #1f6d66 0%, #8fa5a1 100%);
+}
+
+#home .hero-content {
+  position: relative;
+  z-index: 3;
+}
+
+#home .hero-logo {
+  width: min(100%, 430px);
+  filter: brightness(1.1) contrast(1.24) saturate(1.22)
+    drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35))
+    drop-shadow(0 14px 26px rgba(0, 0, 0, 0.32));
+}
+
+#home .hero-video-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+#home .hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#home .hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(110deg, rgba(11, 31, 29, 0.62) 0%, rgba(23, 119, 109, 0.45) 45%, rgba(16, 38, 36, 0.58) 100%);
+}
+
+#home h2,
+#home p,
+#home a {
+  color: #fff;
+}
+
+#home .btn-main {
+  background-color: #17776d;
+}
+
+#home .btn-main:hover,
+#home .btn-main:focus {
+  background-color: #f9a743;
+}
+
+@media (max-width: 767px) {
+  #home {
+    min-height: 60vh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #home .hero-video {
+    display: none;
+  }
+}
+
 .font-size-60 {
   font-size: 60px;
   line-height: 1.2;
